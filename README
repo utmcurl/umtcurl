@@ -1,0 +1,16 @@
+GENERAL
+
+The scripts in this directory are created so I can test a proxy created by a colleague.
+By using scripts I don't have to do it manualy all the time.
+Due to the lack of (finding) programms that fit my needs I decided to created something myself.
+
+It uses simple shell scripting to manage the testing.
+The scripts simply calls curl and curl-loader.
+
+FUNCTIONS
+
+Making requests to the proxy
+Making a lot of requests to the proxy (stress testing)
+Making bogus requests to test if the proxy reacts nicely
+Log all the requests and the results
+
