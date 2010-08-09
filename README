@@ -13,4 +13,17 @@ Making requests to the proxy
 Making a lot of requests to the proxy (stress testing)
 Making bogus requests to test if the proxy reacts nicely
 Log all the requests and the results
+Create test suites by changing the extention to .active or .inactive
+
+REQUIREMENTS
+
+Linux shell (bash or ...)
+curl
+curl-loader
+
+USAGE
+
+--make sure to ADJUST the variables in main.sh to reflect the situation on your system--
+
+sh main.sh <directory with test files> <path to exectuable> #Loops through all files in the specified directory
 
