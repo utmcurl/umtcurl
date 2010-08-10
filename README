@@ -23,7 +23,17 @@ curl-loader
 
 USAGE
 
---make sure to ADJUST the variables in main.sh to reflect the situation on your system--
+sh main.sh [directory with test files] [path to exectuable] #Loops through all files in the specified directory
 
-sh main.sh <directory with test files> <path to exectuable> #Loops through all files in the specified directory
+Create a test file simply by making an sh script BUT make the EXTENSION of the file .active
+
+A test file is included, here's the code:
+
+---test.active---
+#! /bin/sh
+
+echo "STARTED: "$0
+echo "I DO NOTHING"
+echo "ENDED: "$0 ($SECONDS seconds)
+
 
