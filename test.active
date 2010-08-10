@@ -1,0 +1,18 @@
+#! /bin/sh
+## START OF GENERIC PIECE ##
+#Make sure the proxy is running
+#Set the variable
+executableRunning
+if [ $EXECUTABLERUNNING == 1 ]
+then
+	#Force a reboot
+	killExecutable
+	startExecutable
+elif [ $EXECUTABLERUNNING == 0 ]
+then
+	startExecutable
+fi
+## END OF GENERIC PIECE ##
+echo "STARTED: $0"
+curl -x localhost:8080 www.google.com
+echo "ENDED: "$0 "($SECONDS seconds)"
